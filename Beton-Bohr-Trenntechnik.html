@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AT Bau GbR – Betonbohr & Trenntechnik</title>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="icon" type="image/png" href="images/favicon.png">
+
+  <style>
+    /* Lightbox Overlay */
+    .lightbox {
+      display: none;
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.85);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80%;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.6);
+      animation: zoomIn 0.3s ease;
+    }
+    @keyframes zoomIn {
+      from { transform: scale(0.7); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+    .lightbox .close {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      font-size: 36px;
+      color: #fff;
+      cursor: pointer;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    .lightbox .close:hover {
+      color: #00a8ff;
+    }
+    .gallery .card img {
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .gallery .card img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop id="bg-video">
+    <source src="videos/background.mp4" type="video/mp4">
+  </video>
+
+  <div class="top-bar">
+    🕑 Mo - Fr: 09:00 - 15:30 &nbsp;&nbsp; | &nbsp;&nbsp; 📞 +49 (0)162 9635107 &nbsp;&nbsp; | &nbsp;&nbsp; 📧 
+    <a href="mailto:info@atbau-ac.de">info@atbau-ac.de</a>
+  </div>
+
+  <header>
+    <img src="images/logo.png" alt="AT Bau Logo" class="logo">
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="ueber-uns.html">Über uns</a>
+      <a href="dienstleistungen.html" class="active">Dienstleistungen</a>
+      <a href="partner.html">Partner</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+  </header>
+
+  <main class="main">
+    <h1>Betonbohr & Trenntechnik</h1>
+    <p>
+      Dank unseres modernen Maschinenparks setzen wir auch komplexe Aufgaben präzise und fachgerecht um. 
+      Mit leistungsstarken Geräten schneiden wir Öffnungen in Beton- oder Steinwände, Böden und Decken. 
+      Bohrungen sind dabei bis zu einem Durchmesser von 800 mm möglich, Schnitte erreichen eine Tiefe von bis zu 1,20 m. 
+      Durch den Einsatz von Fugenschneidern lassen sich zudem exakte Schnitte in Beton oder Estrich herstellen, beispielsweise für Dehnungsfugen.
+    </p>
+  </main>
+
+  <div class="gallery">
+    <div class="card"><img src="images/betonbohr/16.png" alt="Projekt 16"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/13.jpg" alt="Projekt 13"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/14.jpg" alt="Projekt 14"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/8.png" alt="Projekt 8"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/9.png" alt="Projekt 9"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/15.jpg" alt="Projekt 15"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/18.png" alt="Projekt 18"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/11.jpg" alt="Projekt 11"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/12.jpg" alt="Projekt 12"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/3.png" alt="Projekt 3"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/2.png" alt="Projekt 2"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/7.png" alt="Projekt 7"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/6.png" alt="Projekt 6"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/4.png" alt="Projekt 4"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/17.png" alt="Projekt 17"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/19.png" alt="Projekt 19"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/5.png" alt="Projekt 5"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/1.png" alt="Projekt 1"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/10.png" alt="Projekt 10"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/21.png" alt="Projekt 21"><h3></h3></div>
+    <div class="card"><img src="images/betonbohr/20.png" alt="Projekt 20"><h3></h3></div>
+  </div>
+
+  <!-- Lightbox Element -->
+  <div class="lightbox" id="lightbox">
+    <span class="close" id="close">&times;</span>
+    <img id="lightbox-img" src="" alt="Projekt Bild">
+  </div>
+
+  <div class="spacer"></div>
+
+  <footer>
+    © 2025 AT Bau GbR – Alle Rechte vorbehalten | 
+    <a href="https://www.linkedin.com/in/stefan-march-8b5426290/" target="_blank">Erstellt durch Stefan March</a> | 
+    <a href="impressum.html">Impressum</a> | 
+    <a href="datenschutz.html">Datenschutzerklärung</a>
+  </footer>
+
+  <!-- Lightbox JS -->
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.getElementById('close');
+
+    document.querySelectorAll('.gallery .card img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'flex';
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+      });
+    });
+
+    closeBtn.addEventListener('click', () => {
+      lightbox.style.display = 'none';
+    });
+
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    });
+  </script>
+</body>
+</html>
